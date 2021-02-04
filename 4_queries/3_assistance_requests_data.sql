@@ -1,12 +1,3 @@
--- -- MINE
--- SELECT teachers.name as teacher, students.name as student, assignments.name as assignment, (completed_at - started_at) as duration
--- FROM assignments
--- JOIN assistance_requests ON assignments.id = assignment_id 
--- JOIN teachers ON teacher_id = teachers.id 
--- JOIN students ON student_id = students.id
--- ORDER BY duration;
-
--- COMPASS
 SELECT teachers.name as teacher, students.name as student, assignments.name as assignment, (completed_at-started_at) as duration
 FROM assistance_requests
 JOIN teachers ON teachers.id = teacher_id
